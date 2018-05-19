@@ -1,0 +1,15 @@
+.clkbutton{
+    border: 2px solid brown;
+    padding: 5px 9px;
+    border-radius: 15px;
+    
+    background-color: brown;
+    color: wheat;
+    
+    
+}
+.closebutton{
+    font-size: 25px;
+    color: black;
+    
+}

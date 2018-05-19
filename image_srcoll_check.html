@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Scroll Img</title>
+        
+    </head>
+    <style>
+        .container-img{
+            width: 1000px;
+            margin: auto;
+            
+        }
+        .row-1{
+            margin: 900px;
+            margin: auto;
+            
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <body>
+        <div class="container-img">
+            <div class="row-1">
+                
+                    <img src="img/001.jpg" alt="new" onclick="showimagebox(1)">
+                     <img src="img/001.jpg" alt="new" onclick="showimagebox(2)">
+                     <img src="img/001.jpg" alt="new" onclick="showimagebox()">
+                
+            </div>
+            <div  id="roothide" class="hidden-class" style="height: 500px;width: inherit; display: none">
+                <div class="row-1">
+                    <img src="img/001.jpg" alt="new" >
+                     <img src="img/001.jpg" alt="new" >
+                     <img src="img/001.jpg" alt="new" >
+                    
+                </div>
+            </div>
+            <div id="roothide1" class="hidden-class" style="height: 500px;width: inherit; display: none">
+                <div class="row-1">
+                    <img src="img/002.jpg" alt="new" >
+                     <img src="img/002.jpg" alt="new" >
+                     <img src="img/003.jpg" alt="new" >
+                    
+                </div>
+            </div>
+            
+        </div>
+        <script>
+            function showimagebox(x){
+                
+                if(x==1){
+                   document.getElementById("roothide1").style.display="none";
+                
+                    document.getElementById("roothide").style.display="block";
+                
+                    
+                }
+                else if(x==2)
+                    {
+                        document.getElementById("roothide").style.display="none";
+                
+                    document.getElementById("roothide1").style.display="block";
+                
+                    }
+               
+            }
+        </script>
+        
+    </body>
+</html>
